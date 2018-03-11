@@ -2,13 +2,13 @@
 $modversion = array();
 
 //---模組基本資訊---//
-$modversion['name']        = '模組中文名稱';
-$modversion['version']     = 1.00;
-$modversion['description'] = '模組說明';
-$modversion['author']      = '作者姓名';
-$modversion['credits']     = '相關有功人員';
+$modversion['name']        = _MI_XXX_NAME;
+$modversion['version']     = '1.00';
+$modversion['description'] = _MI_XXX_DES;
+$modversion['author']      = _MI_XXX_AUTHOR;
+$modversion['credits']     = _MI_XXX_CREDITS;
 $modversion['help']        = 'page=help';
-$modversion['license']     = 'GNU GPL 2.0';
+$modversion['license']     = _MI_XXX_LICENSE;
 $modversion['license_url'] = 'www.gnu.org/licenses/gpl-2.0.html/';
 $modversion['image']       = 'images/logo.png';
 $modversion['dirname']     = basename(dirname(__FILE__));
@@ -49,9 +49,9 @@ $modversion['hasMain'] = 1;
 //$modversion['sub'][1]['url'] = '';
 
 //---模組自動功能---//
-//$modversion['onInstall'] = "include/install.php";
-//$modversion['onUpdate'] = "include/update.php";
-//$modversion['onUninstall'] = "include/onUninstall.php";
+// $modversion['onInstall'] = "include/onInstall.php";
+// $modversion['onUpdate'] = "include/onUpdate.php";
+// $modversion['onUninstall'] = "include/onUninstall.php";
 
 //---樣板設定---//
 $modversion['templates']                    = array();
