@@ -23,6 +23,22 @@ switch ($op) {
     break;
 }
 
+
+#相容JQUERY
+$ver = intval(str_replace('.', '', substr(XOOPS_VERSION, 6, 5)));
+if ($ver >= 259) {
+  $xoTheme->addScript('modules/tadtools/jquery/jquery-migrate-3.0.0.min.js');
+} else {
+  $xoTheme->addScript('modules/tadtools/jquery/jquery-migrate-1.4.1.min.js');
+}
+
+$xoTheme->addStylesheet(XOOPS_URL . "/modules/xm250/css/module_b3.css");
+$xoopsTpl->assign( "moduleMenu" , $moduleMenu) ;
+$xoopsTpl->assign( "isAdmin" , $isAdmin) ;//interface_menu.php
+$xoopsTpl->assign( "op" , $op) ;
+#關閉左右區塊
+//$xoopsTpl->assign( 'xoops_showlblock', 0 );
+//$xoopsTpl->assign( 'xoops_showrblock', 0 );
 /*-----------秀出結果區--------------*/
 include_once XOOPS_ROOT_PATH . '/footer.php';
 
