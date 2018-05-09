@@ -36,7 +36,7 @@ $modversion['system_menu'] = 1;
 
 //---模組資料表架構---//
 //$modversion['sqlfile']['mysql'] = 'sql/mysql.sql';
-//$modversion['tables'][0] = '模組目錄_files_center';
+//$modversion['tables'][1] = '模組目錄_files_center';
 
 //---後台管理介面設定---//
 $modversion['hasAdmin']   = 1;
