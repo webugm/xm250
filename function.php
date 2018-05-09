@@ -5,4 +5,7 @@ if (!file_exists(XOOPS_ROOT_PATH . "/modules/tadtools/tad_function.php")) {
 }
 include_once XOOPS_ROOT_PATH . "/modules/tadtools/tad_function.php";
 
+#引入ugmTools.php
+include_once XOOPS_ROOT_PATH . "/modules/ugm_tools2/ugmTools.php";
+
 //其他自訂的共同的函數

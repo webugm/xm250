@@ -37,4 +37,3 @@ function 模組目錄_search($queryarray, $andor, $limit, $offset, $userid){
 	return $ret;
 }
 */
-?>
