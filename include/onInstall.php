@@ -26,4 +26,3 @@ function go_update() {
   global $xoopsDB;
 }
  */
-?>
