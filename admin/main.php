@@ -4,7 +4,7 @@ $xoopsOption['template_main'] = "模組目錄_adm_main.tpl";
 include_once "header.php";
 include_once "../function.php";
 
-#模組目錄
+# 模組 目錄
 $module_name = $xoopsModule->dirname();
 #強制關除錯
 //ugm_module_debug_mode(0);

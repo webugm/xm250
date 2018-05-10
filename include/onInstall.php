@@ -1,5 +1,4 @@
 <?php
-/*
 include_once XOOPS_ROOT_PATH . "/modules/ugm_tools2/InstallFunction.php";
 function xoops_module_install_模組目錄(&$module) {
 
@@ -25,4 +24,4 @@ function go_install() {
 function go_update() {
   global $xoopsDB;
 }
- */
+ 
