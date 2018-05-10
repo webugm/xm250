@@ -29,6 +29,7 @@ switch ($op) {
   default:
     # ---- 目前網址 ----
     $_SESSION['return_url'] = getCurrentUrl();
+    $op = "opList";
     opList();
     break;
 }

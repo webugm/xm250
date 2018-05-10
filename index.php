@@ -1,7 +1,7 @@
 <?php
 /*-----------引入檔案區--------------*/
 include_once "header.php";
-$xoopsOption['template_main'] = "demo_index.tpl";
+$xoopsOption['template_main'] = "模組目錄_index.tpl";
 include_once XOOPS_ROOT_PATH . "/header.php";
 
 
@@ -19,7 +19,10 @@ switch ($op) {
   // exit;
 
   default:
-    show_content();
+    # ---- 目前網址 ----
+    $_SESSION['return_url'] = getCurrentUrl();
+    $op = "opList";
+    opList();
     break;
 }
 
@@ -32,7 +35,7 @@ if ($ver >= 259) {
   $xoTheme->addScript('modules/tadtools/jquery/jquery-migrate-1.4.1.min.js');
 }
 
-$xoTheme->addStylesheet(XOOPS_URL . "/modules/xm250/css/module_b3.css");
+$xoTheme->addStylesheet(XOOPS_URL . "/modules/模組目錄/css/module.css");
 $xoopsTpl->assign( "moduleMenu" , $moduleMenu) ;
 $xoopsTpl->assign( "isAdmin" , $isAdmin) ;//interface_menu.php
 $xoopsTpl->assign( "op" , $op) ;
@@ -45,7 +48,7 @@ include_once XOOPS_ROOT_PATH . '/footer.php';
 /*-----------function區--------------*/
 
 //顯示預設頁面內容
-function show_content(){
+function opList(){
   global $xoopsTpl;
   $main = "模組開發中";
   $xoopsTpl->assign('content', $main);
