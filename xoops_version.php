@@ -35,8 +35,8 @@ $modversion['paypal']['currency_code'] = 'USD';
 $modversion['system_menu'] = 1;
 
 //---模組資料表架構---//
-//$modversion['sqlfile']['mysql'] = 'sql/mysql.sql';
-//$modversion['tables'][1] = '模組目錄_files_center';
+$modversion['sqlfile']['mysql'] = 'sql/mysql.sql';
+$modversion['tables'][1] = '模組目錄_files_center';
 
 //---後台管理介面設定---//
 $modversion['hasAdmin']   = 1;
@@ -49,18 +49,18 @@ $modversion['hasMain'] = 1;
 //$modversion['sub'][1]['url'] = '';
 
 //---模組自動功能---//
-// $modversion['onInstall'] = "include/onInstall.php";
-// $modversion['onUpdate'] = "include/onUpdate.php";
-// $modversion['onUninstall'] = "include/onUninstall.php";
+$modversion['onInstall'] = "include/onInstall.php";
+$modversion['onUpdate'] = "include/onUpdate.php";
+$modversion['onUninstall'] = "include/onUninstall.php";
 
 //---樣板設定---//
 $modversion['templates']                    = array();
 $i                                          = 1;
-$modversion['templates'][$i]['file']        = 'demo_adm_main.tpl';
+$modversion['templates'][$i]['file']        = '模組目錄_adm_main.tpl';
 $modversion['templates'][$i]['description'] = '後台管理頁樣板';
 
 $i++;
-$modversion['templates'][$i]['file']        = 'demo_index.tpl';
+$modversion['templates'][$i]['file']        = '模組目錄_index.tpl';
 $modversion['templates'][$i]['description'] = '模組首頁樣板';
 
 //---偏好設定---//
