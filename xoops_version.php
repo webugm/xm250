@@ -4,7 +4,7 @@ $modversion = array();
 //---模組基本資訊---//
 $modversion['name']        = _MI_XXX_NAME;
 $modversion['version']     = '1.00';
-$modversion['description'] = _MI_XXX_DES;
+$modversion['description'] = _MI_XXX_DESC;
 $modversion['author']      = _MI_XXX_AUTHOR;
 $modversion['credits']     = _MI_XXX_CREDITS;
 $modversion['help']        = 'page=help';

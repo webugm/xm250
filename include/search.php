@@ -1,5 +1,4 @@
 <?php
-/*
 //搜尋程式
 
 function 模組目錄_search($queryarray, $andor, $limit, $offset, $userid){
@@ -36,4 +35,3 @@ function 模組目錄_search($queryarray, $andor, $limit, $offset, $userid){
 	}
 	return $ret;
 }
-*/
