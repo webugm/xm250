@@ -1,15 +1,11 @@
 <?php
 include_once XOOPS_ROOT_PATH . "/modules/ugm_tools2/InstallFunction.php";
 function xoops_module_install_模組目錄(&$module) {
-
   #安裝
   go_install();
   #更新
-  go_update(); 
-
+  go_update();
   return true;
-
-return true;
 }
 
 //安裝
