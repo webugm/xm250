@@ -14,4 +14,4 @@ CREATE TABLE `模組目錄_files_center` (
   `hash_filename` varchar(255) NOT NULL default '' COMMENT '加密檔案名稱',
   `sub_dir` varchar(255) NOT NULL default '' COMMENT '檔案子路徑',
   PRIMARY KEY (`files_sn`)
-) ENGINE=MyISAM;
+) ENGINE=InnoDB;
